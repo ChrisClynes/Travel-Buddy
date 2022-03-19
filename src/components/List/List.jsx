@@ -1,16 +1,21 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect, createRef } from 'react';
 import { CircularProgress, Grid, Typography, InputLabel, MenuItem, FormControl, Select } from '@material-ui/core';
 
-import Place from '../Place/Place';
+import PlaceDetails from '../PlaceDetails/PlaceDetails';
 
 import useStyles from './styles';
 
-const List = ({ places }) => {
+const List = ({ places, childClicked }) => {
     const classes = useStyles();
     const [type, setType] = useState('restaurants');{/*Hooks always return an array of 2 values, left is the current State "type", right is the function to update that State "setType" can be called anything. "restaurants" is passed as the default State*/}
     const [rating, setRating] = useState('');
     
+    const [elRefs, setElRefs] = useState([]);
+    useEffect(() => {
+        const refs = Array(places.length).fill().map((_, i) => elRefs[i] || createRef());
 
+        setElRefs(refs);
+    }, [places]);
 
     return (
         <div className={classes.container}>
@@ -35,7 +40,7 @@ const List = ({ places }) => {
             <Grid container spacing={3} className={classes.list}>
                 {places?.map((place, i)=> (
                     <Grid item key={i} xs={12}>
-                        <Place place={place} /> {/*Pass place down as prop*/}
+                        <PlaceDetails place={place} /> {/*Pass place down as prop*/}
                     </Grid>
                 ))} {/*Condition say if you have "places" only then map over them and return Grid item, xs to full size, take full 12 spaces*/}
             </Grid>
