@@ -12,7 +12,7 @@ const URL = 'https://travel-advisor.p.rapidapi.com/restaurants/list-in-boundary'
 //   },
 //   headers: {
 //     'x-rapidapi-host': 'travel-advisor.p.rapidapi.com',
-//     'x-rapidapi-key': 'b94d2856a6msh8aaea4dcc26b775p1d23bejsn65d63ac67c13'
+//     'x-rapidapi-key': ''
 //   }
 // };//pulled directly from rapid API documentation to get restaurant data based on screen lat and lng coords for each corner of map viewport. "bl"=bottom left
     //this entire piece is used as a parameter below on getPlacesData try await call
