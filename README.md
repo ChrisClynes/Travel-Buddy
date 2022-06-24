@@ -1,5 +1,12 @@
-# About
-testing api app for travel data in google maps
+# Travel Buddy
+### travel helper to find restaurants and places of interest in any area using google maps api
+    +uses geolocation to determine your area
+    +mobile responsive
+    +search any location
+    +places information and website links
+
+!["desktop"](https://github.com/ChrisClynes/Travel-Buddy/blob/master/markdown/images/homepage_img.PNG?raw=true "desktop")
+!["mobile"](https://github.com/ChrisClynes/Travel-Buddy/blob/master/markdown/images/mobile_img.PNG?raw=true "mobile")
 
 # Dependencies
  "@material-ui/core": "^4.12.3",
@@ -16,4 +23,7 @@ testing api app for travel data in google maps
     "react-scripts": "5.0.0",
     "web-vitals": "^2.1.4"
 
-T
+### To run complete pull request and start with `npm start`
+
+Runs the app in the development mode.\
+Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
