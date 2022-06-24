@@ -1,9 +1,9 @@
 # Travel Buddy
 ### travel helper to find restaurants and places of interest in any area using google maps api
-    +uses geolocation to determine your area
-    +mobile responsive
-    +search any location
-    +places information and website links
+    + uses geolocation to determine your area
+    + mobile responsive
+    + search any location
+    + places information and website links
 
 !["desktop"](https://github.com/ChrisClynes/Travel-Buddy/blob/master/markdown/images/homepage_img.PNG?raw=true "desktop")
 !["mobile"](https://github.com/ChrisClynes/Travel-Buddy/blob/master/markdown/images/mobile_img.PNG?raw=true "mobile")
